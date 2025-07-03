@@ -2,14 +2,6 @@
 """
 Extended list of French function words (stop-words), organised by morpho-syntactic type.
 
-Changelog (03 juil 2025)
-------------------------
-• +35 % de couverture (formes élidées, clitiques, locutions fréquentes).
-• Conjonctions coordonnées vs subordonnées.
-• Pronoms indéfinis/interrogatifs/démonstratifs distincts.
-• Ajout d’un bloc Modaux (pouvoir, devoir, etc.).
-• Dict FUNCTION_WORDS -> frozenset ; flat-set ALL_FUNCTION_WORDS.
-"""
 
 from __future__ import annotations
 
