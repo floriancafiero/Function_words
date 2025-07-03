@@ -1,7 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Extended list of French function words (stop-words), organised by morpho-syntactic type.
-
 
 from __future__ import annotations
 
