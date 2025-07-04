@@ -82,8 +82,3 @@ Every dataset is a single JSON file with this layout:
 `functionwords` never changes the file in place, so you are free to edit it in your own fork.
 
 ---
-
-
-## Credits
-Built with ❤ by the open‑source community and ChatGPT contributor 😊
-
