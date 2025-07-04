@@ -1,7 +1,3 @@
-[project.scripts]
-fw-list = "functionwords._cli:list_sets"
-fw-export = "functionwords._cli:export_set"
-
 \"\"\"Command-line interface for *functionwords*.\"\"\"
 
 import argparse, json, sys
