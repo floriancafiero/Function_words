@@ -17,7 +17,6 @@ Supported out of the box:
 | `nl_21c`  | Dutch – 21st century                | ≈ 460   |
 | `la_1cbc` | Classical Latin – 1st c. BCE        | ≈ 320   |
 
-You can add further languages or historical stages by dropping new JSON files into `functionwords/datasets/`.
 ---
 
 ## Installation
