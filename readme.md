@@ -12,8 +12,8 @@ Supported out of the box:
 |-----------|-------------------------------------|---------|
 | `fr_21c`  | French – 21st century               | ≈ 610   |
 | `en_21c`  | English – 21st century              | ≈ 540   |
-| `it_21c`  | Italian – 21st century              | ≈ 520   |
 | `es_21c`  | Spanish – 21st century              | ≈ 530   |
+| `it_21c`  | Italian – 21st century              | ≈ 520   |
 | `nl_21c`  | Dutch – 21st century                | ≈ 460   |
 | `la_1cbc` | Classical Latin – 1st c. BCE        | ≈ 320   |
 
