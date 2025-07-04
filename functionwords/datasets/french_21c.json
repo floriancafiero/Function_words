@@ -1,5 +1,5 @@
 
-# Build the categories exactly as in fr_function_words_v3
+# Set of function words sorted by grammatical nature
 
 ARTICLES_DETERMINERS = frozenset([
     "le", "la", "l'", "les",
