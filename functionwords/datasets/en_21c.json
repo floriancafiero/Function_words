@@ -1,6 +1,4 @@
-import json, pathlib
-
-# Build English 21st-century function word sets
+# English 21st-century function word sets
 
 ARTICLES_DETERMINERS = frozenset([
     "the", "a", "an",
