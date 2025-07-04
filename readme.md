@@ -83,18 +83,6 @@ Every dataset is a single JSON file with this layout:
 
 ---
 
-## Extending
-* **Drop‑in**: add `xx_period.json` under `functionwords/datasets/` and rebuild the wheel.
-* **Plugin**: distribute a separate package that exposes its folder through the entry‑point group `functionwords_datasets`.  The loader will discover and merge third‑party sets automatically.
-
-See `CONTRIBUTING.md` for guidelines on style and minimal coverage.
-
----
-
-## License
-MIT.  The stop‑lists themselves compile public‑domain words; see source headers for per‑file provenance.
-
----
 
 ## Credits
 Built with ❤ by the open‑source community and ChatGPT contributor 😊
