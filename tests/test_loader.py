@@ -1,6 +1,6 @@
 import functionwords as fw
 
-print("Jeux dispo :", fw.available_ids())      # A terme: ['fr_21c', 'en_17c', 'it_19c']
+print("Jeux dispo :", fw.available_ids())
 fr = fw.load("fr_21c")
 print(len(fr.all), "mots français modernes")
 print("'ne' in set ?", 'ne' in fr.all)
