@@ -1,3 +1,7 @@
+[project.scripts]
+fw-list = "functionwords._cli:list_sets"
+fw-export = "functionwords._cli:export_set"
+
 import argparse, json, sys
 from ._loader import load, available_ids
 
