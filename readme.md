@@ -5,7 +5,7 @@ _Comprehensive multilingual function‑word datasets with a simple Python API_
 ---
 
 ## Overview
-`functionwords` is a lightweight package that ships ready‑to‑use **stop‑lists** (function‑word lists) for multiple languages and time periods.  Each dataset is stored as a pure JSON resource and loaded on demand through a small, typed API.
+`functionwords` is a lightweight package that ships ready‑to‑use **stop‑lists** (function‑word lists) for multiple languages and time periods.  Each dataset is stored as a JSON resource and loaded on demand through a small API.
 
 Supported out of the box:
 | ID        | Language / period                  | Entries |
