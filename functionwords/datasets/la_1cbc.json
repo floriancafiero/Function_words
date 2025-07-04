@@ -1,4 +1,4 @@
-# Classical Latin (1st century) function words by grammatical nature
+# Classical Latin (1st century BC) function words by grammatical nature
 
 ARTICLES_DETERMINERS = frozenset([
     # Latin has no articles; determiners/demonstratives
