@@ -266,9 +266,3 @@ data = {
     "period": "21c",
     "categories": categories,
 }
-
-output_path = pathlib.Path("/mnt/data/fr_21c.json")
-with output_path.open("w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-
-output_path
