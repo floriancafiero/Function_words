@@ -13,13 +13,14 @@ _Comprehensive multilingual function‑word datasets with a simple Python API_
 Supported out of the box:
 | ID        | Language / period                  | Entries |
 |-----------|-------------------------------------|---------|
-| `fr_21c`  | French – 21st century               | ≈ 610   |
-| `en_21c`  | English – 21st century              | ≈ 540   |
-| `es_21c`  | Spanish – 21st century              | ≈ 530   |
-| `it_21c`  | Italian – 21st century              | ≈ 520   |
-| `nl_21c`  | Dutch – 21st century                | ≈ 460   |
-| `oc_13c`  | Occitan – 13th century              | ≈ 320   |
-| `la_1cbc` | Classical Latin – 1st c. BCE        | ≈ 320   |
+| `fr_21c`  | French – 21st century               | 671   |
+| `en_21c`  | English – 21st century              | 418   |
+| `es_21c`  | Spanish – 21st century              | 469   |
+| `it_21c`  | Italian – 21st century              | 475   |
+| `nl_21c`  | Dutch – 21st century                | 309   |
+| `nl_21c`  | Greek – 5th century BCE             | 258   |
+| `oc_13c`  | Occitan – 13th century              | 333   |
+| `la_1cbc` | Classical Latin – 1st c. BCE        | 368   |
 
 It allows for personalized definition of function words. Function words are sorted by grammatical natures, which can be selected or not, depending on the expected use. 
 
