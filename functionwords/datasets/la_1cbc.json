@@ -1,7 +1,5 @@
-# Classical Latin (1st century BC) function words by grammatical nature
-
-ARTICLES_DETERMINERS = frozenset([
-    # Latin has no articles; determiners/demonstratives
+ARTICLES_DETERMINERS = sorted({
+    # Latin has no articles; set of pronominal / determinative adjectives
     "hic", "haec", "hoc",
     "ille", "illa", "illud",
     "iste", "ista", "istud",
@@ -9,45 +7,41 @@ ARTICLES_DETERMINERS = frozenset([
     "aliqui", "aliqua", "aliquod",
     "quidam", "quaedam", "quoddam",
     "quicumque", "quaecumque", "quodcumque",
-    "omnis", "omne",
+    "omnis", "omne", "omnes",
     "totus", "tota", "totum",
     "unus", "una", "unum",
     "alter", "altera", "alterum",
     "nullus", "nulla", "nullum",
     "solus", "sola", "solum",
     "uterque", "utraque", "utrumque",
-])
+    "alius", "alia", "aliud",
+    "singuli", "singulae", "singula"
+})
 
-POSSESSIVE_DETERMINERS = frozenset([
+POSSESSIVE_DETERMINERS = sorted({
     "meus", "mea", "meum",
     "tuus", "tua", "tuum",
     "suus", "sua", "suum",
     "noster", "nostra", "nostrum",
-    "vester", "vestra", "vestrum",
-])
+    "vester", "vestra", "vestrum"
+})
 
-PERSONAL_PRONOUNS = frozenset([
+PERSONAL_PRONOUNS = sorted({
     "ego", "tu", "nos", "vos",
     "is", "ea", "id",
-    "se",
-])
+    "se"
+})
 
-POSSESSIVE_PRONOUNS = frozenset([
-    "meus", "mea", "meum",
-    "tuus", "tua", "tuum",
-    "suus", "sua", "suum",
-    "noster", "nostra", "nostrum",
-    "vester", "vestra", "vestrum",
-])
+POSSESSIVE_PRONOUNS = POSSESSIVE_DETERMINERS  # identical word-forms
 
-DEMONSTRATIVE_PRONOUNS = frozenset([
+DEMONSTRATIVE_PRONOUNS = sorted({
     "hic", "haec", "hoc",
     "ille", "illa", "illud",
     "iste", "ista", "istud",
-    "is", "ea", "id",
-])
+    "is", "ea", "id"
+})
 
-INDEFINITE_PRONOUNS = frozenset([
+INDEFINITE_PRONOUNS = sorted({
     "aliquis", "aliquid",
     "quis", "quid",
     "quisquam", "quidquam",
@@ -57,109 +51,111 @@ INDEFINITE_PRONOUNS = frozenset([
     "nemo", "nihil",
     "nullus", "nulla", "nullum",
     "alter", "altera", "alterum",
-    "uter", "utra", "utrum",
-])
+    "uter", "utra", "utrum"
+})
 
-INTERROGATIVE_PRONOUNS = frozenset([
+INTERROGATIVE_PRONOUNS = sorted({
     "quis", "quid",
     "qui", "quae", "quod",
     "uter", "utra", "utrum",
-    "qualis", "quantus",
-])
+    "qualis", "quantus", "quot"
+})
 
-PREPOSITIONS = frozenset([
+PREPOSITIONS = sorted({
     "a", "ab", "abs", "ad", "ante", "apud", "circum", "cis",
     "contra", "cum", "de", "ex", "e", "extra",
     "in", "infra", "inter", "intra", "iuxta",
     "ob", "per", "post", "prae", "pro", "propter",
     "sine", "sub", "super", "supra", "trans", "ultra",
-])
+    "subter", "penes", "praeter"
+})
 
-COORD_CONJUNCTIONS = frozenset([
+COORD_CONJUNCTIONS = sorted({
     "et", "atque", "ac",
     "aut", "vel", "ve",
     "nec", "neque",
     "sed", "verum", "vero", "autem",
-    "tamen", "itaque",
-])
+    "tamen", "itaque", "quoque"
+})
 
-SUBORD_CONJUNCTIONS = frozenset([
+SUBORD_CONJUNCTIONS = sorted({
     "quod", "quia", "cum", "ut", "dum",
-    "si", "nisi", "ne",
+    "si", "nisi", "ne", "ut ne", "dum ne",
     "quamquam", "etsi", "tametsi",
     "postquam", "antequam", "ubi", "quando", "quoniam",
-    "donec", "utrum",
-])
+    "donec", "utrum", "siquidem"
+})
 
-ADVERBS = frozenset([
-    "hic", "ibi", "illic", "inde", "hinc", "eo", "usque",
+ADVERBS = sorted({
+    "hic", "ibi", "illic", "inde", "hinc", "eo", "usque", "istuc",
     "hodie", "heri", "cras",
-    "nunc", "statim", "mox", "iam", "sero", "tandem",
-    "saepe", "nunquam", "numquam", "raro",
+    "nunc", "statim", "mox", "iam", "iamdudum", "sero", "tandem",
+    "saepe", "numquam", "nunquam", "raro", "crebro",
     "bene", "male",
     "magis", "minus", "maxime", "minime",
     "multum", "parum",
     "tam", "quam",
     "ita", "sic", "item",
     "etiam", "quoque", "quidem", "tamen", "igitur", "ergo", "enim",
-    "forte", "certe",
-    "non", "haud", "ne",
-])
+    "forte", "certe", "vix", "haud",
+    "non", "ne",
+})
 
-ADV_LOCUTIONS = frozenset([
+ADV_LOCUTIONS = sorted({
     "post hoc", "deinde", "praeterea", "interea", "ad hoc",
     "quam ob rem", "eo loco", "ex hoc", "proinde", "quapropter",
     "ita vero", "si quidem", "tamquam", "ut ita dicam",
-])
+    "ex quo", "hac de causa"
+})
 
-NEGATIONS = frozenset([
-    "non", "haud", "ne", "nec", "neque",
-])
+NEGATIONS = sorted({
+    "non", "haud", "ne", "nec", "neque", "neu"
+})
 
-AUX_ESSE = frozenset([
+AUX_ESSE = sorted({
     "esse", "sum", "es", "est", "sumus", "estis", "sunt",
     "eram", "eras", "erat", "eramus", "eratis", "erant",
     "ero", "eris", "erit", "erimus", "eritis", "erunt",
     "fui", "fuisti", "fuit", "fuimus", "fuistis", "fuerunt",
-])
+    "forem", "fores", "foret", "foremus", "foretis", "forent"  
+})
 
-MODAL_VERBS = frozenset([
+MODAL_VERBS = sorted({
     "posse", "possum", "potes", "potest", "possumus", "potestis", "possunt",
-    "poteram", "potero",
+    "poteram", "poteras", "poterat", "poteramus", "poteratis", "poterant",
+    "potero", "poteris", "poterit",
     "velle", "volo", "vis", "vult", "volumus", "vultis", "volunt",
     "nolle", "nolo", "non vis", "non vult", "nolumus", "non vultis", "nolunt",
-    "malo", "malle", "mavis", "mavult", "malumus", "mavultis", "malunt",
+    "malle", "malo", "mavis", "mavult", "malumus", "mavultis", "malunt",
     "debere", "debeo", "debes", "debet", "debemus", "debetis", "debent",
-    "oportet",
-])
+    "oportet", "licet", "fas"
+})
 
 categories = {
-    "articles": sorted(ARTICLES_DETERMINERS),
-    "poss_det": sorted(POSSESSIVE_DETERMINERS),
-    "pers_pron": sorted(PERSONAL_PRONOUNS),
-    "poss_pron": sorted(POSSESSIVE_PRONOUNS),
-    "dem_pron": sorted(DEMONSTRATIVE_PRONOUNS),
-    "indef_pron": sorted(INDEFINITE_PRONOUNS),
-    "inter_pron": sorted(INTERROGATIVE_PRONOUNS),
-    "prepositions": sorted(PREPOSITIONS),
-    "coord_conj": sorted(COORD_CONJUNCTIONS),
-    "subord_conj": sorted(SUBORD_CONJUNCTIONS),
-    "adverbs": sorted(ADVERBS),
-    "adv_locutions": sorted(ADV_LOCUTIONS),
-    "negations": sorted(NEGATIONS),
-    "aux_esse": sorted(AUX_ESSE),
-    "modals_full": sorted(MODAL_VERBS),
+    "articles": ARTICLES_DETERMINERS,
+    "poss_det": POSSESSIVE_DETERMINERS,
+    "pers_pron": PERSONAL_PRONOUNS,
+    "poss_pron": POSSESSIVE_PRONOUNS,
+    "dem_pron": DEMONSTRATIVE_PRONOUNS,
+    "indef_pron": INDEFINITE_PRONOUNS,
+    "inter_pron": INTERROGATIVE_PRONOUNS,
+    "prepositions": PREPOSITIONS,
+    "coord_conj": COORD_CONJUNCTIONS,
+    "subord_conj": SUBORD_CONJUNCTIONS,
+    "adverbs": ADVERBS,
+    "adv_locutions": ADV_LOCUTIONS,
+    "negations": NEGATIONS,
+    "aux_esse": AUX_ESSE,
+    "modals_full": MODAL_VERBS
 }
 
 data = {
-    "name": "Classical Latin – 1st century BC",
+    "name": "Classical Latin – 1st c. BCE (enriched)",
     "language": "la",
     "period": "1cBC",
-    "categories": categories,
+    "categories": categories
 }
 
-output_path = pathlib.Path("/mnt/data/la_1cbc.json")
-with output_path.open("w", encoding="utf-8") as f:
-    json.dump(data, f, ensure_ascii=False, indent=2)
-
-output_path
+out = pathlib.Path("/mnt/data/la_1cbc_enriched.json")
+out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+print(out)
