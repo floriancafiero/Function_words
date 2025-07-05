@@ -5,7 +5,7 @@ _Comprehensive multilingual function‑word datasets with a simple Python API_
 ---
 
 ## Overview
-`functionwords` is a lightweight package that ships ready‑to‑use **stop‑lists** (function‑word lists) for multiple languages and time periods.  Each dataset is stored as a JSON resource and loaded on demand through a small API.
+`functionworddatasets` is a package that ships ready‑to‑use **stop‑lists** (function‑word lists) for multiple languages and time periods.  Each dataset is stored as a JSON resource and loaded on demand through a small API.
 
 Supported out of the box:
 | ID        | Language / period                  | Entries |
@@ -17,11 +17,15 @@ Supported out of the box:
 | `nl_21c`  | Dutch – 21st century                | ≈ 460   |
 | `la_1cbc` | Classical Latin – 1st c. BCE        | ≈ 320   |
 
+It allows for personalized definition of function words. Function words are sorted by grammatical natures, which can be selected or not, depending on the expected use. 
+
+A user wanting to remove stopwords to build a word cloud or a topic modeling might chose the most extension function words list, while someone working on authorship attribution might adopt a more focused list, depending on the precise context.
+
 ---
 
 ## Installation
 ```bash
-pip install functionwords  # once published on PyPI
+pip install functionwords  # from pypi
 # or
 pip install -e .           # from a cloned repo
 ```
