@@ -77,7 +77,7 @@ PREPOSITIONS = frozenset([
     "chez", "avec", "entre", "contre", "vers", "selon", "parmi", "via",
     "après", "avant", "depuis", "pendant", "durant", "dès", "lors", "grâce",
     "derrière", "devant", "autour", "hors", "jusque", "jusqu'",
-    "dessous", "dessus", "outre",
+    "dessous", "dessus", "outre", "ès",
     "à travers", "vis-à-vis", "auprès de", "quant à", "loin de", "près de",
 ])
 
