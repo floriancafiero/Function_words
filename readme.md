@@ -85,7 +85,7 @@ The lists are designed to be **modular** and **language-specific**, allowing eas
 
 ## Installation
 ```bash
-pip install functionwords  # from pypi
+pip install functionwordsets  # from pypi
 # or
 pip install -e .           # from a cloned repo
 ```
