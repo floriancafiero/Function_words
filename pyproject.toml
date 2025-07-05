@@ -10,11 +10,11 @@ readme = "readme.md"
 authors = [
   {name = "Florian Cafiero", email = "florian.cafiero@sciencespo.fr"},
 ]
-license = {text = "MIT"}
+license = {text = "GPLv3"}
 requires-python = ">=3.8"
 classifiers = [
   "Programming Language :: Python :: 3",
-  "License :: OSI Approved :: GPL-3.0",
+  "License :: OSI Approved :: GNU General Public License v3.0",
   "Natural Language :: French",
   "Natural Language :: English",
   "Natural Language :: Italian",
@@ -26,12 +26,12 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourname/functionwords"
-Issues   = "https://github.com/yourname/functionwords/issues"
+Homepage = "https://github.com/floriancafiero/functionword"
+Issues   = "https://github.com/floriancafiero/functionword/issues"
 
 [project.scripts]            
-fw-list   = "functionwords._cli:list_sets"
-fw-export = "functionwords._cli:export_set"
+fw-list   = "functionword._cli:list_sets"
+fw-export = "functionword._cli:export_set"
 
 [tool.setuptools.package-data]
-"functionwords.datasets" = ["*.json"]
+"functionword.datasets" = ["*.json"]
