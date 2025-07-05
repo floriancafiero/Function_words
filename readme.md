@@ -4,6 +4,9 @@ _Comprehensive multilingual function‑word datasets with a simple Python API_
 
 ---
 
+[![DOI](https://zenodo.org/badge/1013331042.svg)](https://doi.org/10.5281/zenodo.15811953)
+
+
 ## Overview
 `functionworddatasets` is a package that ships ready‑to‑use **stop‑lists** (function‑word lists) for multiple languages and time periods.  Each dataset is stored as a JSON resource and loaded on demand through a small API.
 
