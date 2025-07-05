@@ -1,5 +1,5 @@
 
-# Set of function words sorted by grammatical nature
+# French 20th - 21st century - function words by grammatical nature
 
 ARTICLES_DETERMINERS = frozenset([
     "le", "la", "l'", "les",
