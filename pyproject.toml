@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=65", "wheel", "build"]   # build deps
+requires = ["setuptools>=65", "wheel", "build"] 
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "functionwords"           # **exact** PyPI name (no spaces)
-version = "1.0.0"                # bump using SemVer
+name = "functionwordsets"           
+version = "1.0.0"            
 description = "Multilingual function-word datasets with a simple loader"
 readme = "README.md"
 authors = [
@@ -27,9 +27,9 @@ classifiers = [
 Homepage = "https://github.com/yourname/functionwords"
 Issues   = "https://github.com/yourname/functionwords/issues"
 
-[project.scripts]              # exposes the CLI
+[project.scripts]            
 fw-list   = "functionwords._cli:list_sets"
 fw-export = "functionwords._cli:export_set"
 
-[tool.setuptools.package-data] # include JSON datasets
+[tool.setuptools.package-data]
 "functionwords.datasets" = ["*.json"]
