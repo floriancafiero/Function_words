@@ -29,7 +29,7 @@ It allows for personalized definition of function words. Function words are sort
 
 This package provides curated lists of **function words** and **auxiliary forms**. These lists are designed to support linguistic analysis, text preprocessing, token filtering, and computational processing across different corpora.
 
-A user wanting to remove stopwords to build a word cloud or a topic modeling might chose the most extension function words list, while someone working on authorship attribution might adopt a more focused list, depending on the precise context.
+A user wanting to remove stopwords to build a word cloud or a topic modeling might chose the most extensive function words list, while someone working on authorship attribution might adopt a more focused list, depending on the precise context.
 
 The supported grammatical categories include:
 
