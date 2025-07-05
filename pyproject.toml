@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "functionwordsets"           
-version = "1.0.5"            
+version = "1.0.6"            
 description = "Multilingual and diachronic function-word datasets, with modular composition"
 readme = "readme.md"
 authors = [
@@ -23,6 +23,7 @@ classifiers = [
   "Natural Language :: Latin",
   "Natural Language :: Ancient Greek",
   "Natural Language :: Medieval Occitan",
+  "Topic :: Text Processing",
 ]
 
 [project.urls]
