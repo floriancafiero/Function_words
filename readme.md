@@ -18,7 +18,7 @@ Supported out of the box:
 | `es_21c`  | Spanish – 21st century              | 469   |
 | `it_21c`  | Italian – 21st century              | 475   |
 | `nl_21c`  | Dutch – 21st century                | 309   |
-| `nl_21c`  | Greek – 5th century BCE             | 258   |
+| `gr_5cbc`  | Greek – 5th century BCE             | 258   |
 | `oc_13c`  | Occitan – 13th century              | 333   |
 | `la_1cbc` | Classical Latin – 1st c. BCE        | 368   |
 
