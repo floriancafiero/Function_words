@@ -1,0 +1,119 @@
+ARTICLES_DETERMINERS = sorted({
+    "lo", "la", "los", "las", "un", "una",
+    "aquel", "aquela", "aquels", "aquelas",
+    "cel", "cela", "cels", "celas",
+    "tot", "tota", "tots", "totas",
+    "cada"
+})
+
+POSSESSIVE_DETERMINERS = sorted({
+    "mon", "ma", "mos", "mas",
+    "ton", "ta", "tos", "tas",
+    "son", "sa", "sos", "sas",
+    "nostre", "nòstra", "nòstres", "nòstras",
+    "vostre", "vòstra", "vòstres", "vòstras",
+    "lor", "lors"
+})
+
+PERSONAL_PRONOUNS = sorted({
+    "ieu", "tu", "el", "ela", "nos", "vos", "els", "elas",
+    "me", "m'", "te", "t'", "se", "s'",
+    "lo", "la", "los", "las", "li", "lor",
+})
+
+POSSESSIVE_PRONOUNS = sorted({
+    "lo mieu", "la mieua", "los mieus", "las mieus",
+    "lo to", "la tua", "los tos", "las tas",
+    "lo sieu", "la sieua", "los sieus", "las sieus",
+    "lo nòstre", "la nòstra", "los nòstres", "las nòstras",
+    "lo vòstre", "la vòstra", "los vòstres", "las vòstras",
+    "lo lor", "la lor", "los lors", "las lors"
+})
+
+DEMONSTRATIVE_PRONOUNS = sorted({
+    "aquest", "aquesta", "aquels", "aquestas",
+    "aquel", "aquela", "aquels", "aquelas",
+    "cel", "cela", "cels", "celas"
+})
+
+INDEFINITE_PRONOUNS = sorted({
+    "qualc", "qualcun", "qualsevol", "res", "negun", "neguna",
+    "cadascun", "cadascuna", "tots", "totas", "d'autres"
+})
+
+INTERROGATIVE_PRONOUNS = sorted({
+    "qui", "que", "cossí", "ont", "quand", "perqué", "quant", "qual"
+})
+
+PREPOSITIONS = sorted({
+    "a", "ab", "amb", "de", "del", "dins", "en", "per", "sens", "sus", "jos",
+    "contra", "entre", "vers", "davant", "darrere", "aprés", "abans", "fins a"
+})
+
+COORD_CONJUNCTIONS = sorted({"e", "o", "ni", "mas", "pues", "car"})
+
+SUBORD_CONJUNCTIONS = sorted({
+    "que", "si", "quan", "cant", "perque", "puesque",
+    "abans que", "aprés que", "mentre", "fin que", "tan que"
+})
+
+ADVERBS = sorted({
+    "aicí", "lai", "alhors", "ara", "sempre", "jamai", "ja", "encara",
+    "ben", "mal", "plan", "pauc", "massa", "molt",
+    "totjorn", "pauc", "pro", "quasi", "pas", "iam", "tostemps",
+})
+
+ADV_LOCUTIONS = sorted({
+    "de tant en tant", "çai la", "d'ara enlà", "tot aplech", "d'un còp", "a la fina"
+})
+
+NEGATIONS = sorted({"non", "pas", "res", "negun", "jamai", "n"})
+
+AUX_ESSER = sorted({
+    "esser", "sui", "si", "es", "sèm", "sètz", "son",
+    "erai", "eras", "era", "erem", "eretz", "eran",
+    "fui", "fos", "fo", "fom", "fostz", "foron"
+})
+
+AUX_AVER = sorted({
+    "aver", "ai", "as", "a", "avem", "avetz", "an",
+    "avi", "avias", "avia", "aviem", "avietz", "avian",
+    "ague", "agues", "aguet", "aguem", "aguetz", "agueren"
+})
+
+MODAL_VERBS = sorted({
+    "poder", "puc", "pots", "pot", "podem", "podetz", "pòdon",
+    "dever", "deu", "devetz", "devon", "devei",
+    "voler", "vuelh", "vòs", "vòl", "volèm", "voletz", "vòlon",
+    "saber", "sai", "saps", "sap", "sabem", "sabetz", "sàbon",
+})
+
+categories = {
+    "articles": ARTICLES_DETERMINERS,
+    "poss_det": POSSESSIVE_DETERMINERS,
+    "pers_pron": PERSONAL_PRONOUNS,
+    "poss_pron": POSSESSIVE_PRONOUNS,
+    "dem_pron": DEMONSTRATIVE_PRONOUNS,
+    "indef_pron": INDEFINITE_PRONOUNS,
+    "inter_pron": INTERROGATIVE_PRONOUNS,
+    "prepositions": PREPOSITIONS,
+    "coord_conj": COORD_CONJUNCTIONS,
+    "subord_conj": SUBORD_CONJUNCTIONS,
+    "adverbs": ADVERBS,
+    "adv_locutions": ADV_LOCUTIONS,
+    "negations": NEGATIONS,
+    "aux_esser": AUX_ESSER,
+    "aux_aver": AUX_AVER,
+    "modals_full": MODAL_VERBS,
+}
+
+data = {
+    "name": "Old Occitan – 12th-13th centuries",
+    "language": "oc",
+    "period": "13c",
+    "categories": categories,
+}
+
+path = pathlib.Path("/mnt/data/oc_13c.json")
+path.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+path
