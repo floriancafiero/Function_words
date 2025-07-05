@@ -15,6 +15,7 @@ Supported out of the box:
 | `es_21c`  | Spanish – 21st century              | ≈ 530   |
 | `it_21c`  | Italian – 21st century              | ≈ 520   |
 | `nl_21c`  | Dutch – 21st century                | ≈ 460   |
+| `oc_13c`  | Occitan – 13th century              | ≈ 320   |
 | `la_1cbc` | Classical Latin – 1st c. BCE        | ≈ 320   |
 
 It allows for personalized definition of function words. Function words are sorted by grammatical natures, which can be selected or not, depending on the expected use. 
