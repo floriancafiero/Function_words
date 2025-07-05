@@ -1,4 +1,4 @@
-# functionwords
+# functionwordsets
 
 _Comprehensive multilingual function‑word datasets with a simple Python API_
 
@@ -96,7 +96,7 @@ The library is in Python ≥ 3.8, has zero runtime dependencies, and is <20�
 
 ## Quick start
 ```python
-import functionwords as fw
+import functionwordsets as fw
 
 # List available datasets
 print(fw.available_ids())          # ['fr_21c', 'en_21c', ...]
