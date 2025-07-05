@@ -22,7 +22,6 @@ classifiers = [
   "Natural Language :: Dutch",
   "Natural Language :: Latin",
   "Natural Language :: Greek",
-  "Natural Language :: Occitan",
   "Topic :: Text Processing",
 ]
 
