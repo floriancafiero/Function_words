@@ -131,12 +131,3 @@ categories = {
     "aux_eimi": AUX_EIMI,
     "modals_full": MODAL_VERBS
 }
-
-data = {
-    "name": "Classical Attic Greek – 5th-4th c. BCE",
-    "language": "grc",
-    "period": "5-4cBCE",
-    "categories": categories
-}
-
-print(json.dumps(data, ensure_ascii=False, indent=2)[:800] + " …")
