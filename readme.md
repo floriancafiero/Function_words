@@ -70,7 +70,7 @@ The supported grammatical categories include:
   Express negation or absence (e.g., *not*, *ne*, *pas*, *jamais*, *nunca*).
 
 ### ⚙️ **Auxiliaries and Modals**
-- **Auxiliary Verbs (e.g., 'to be', 'to have')** (`AUX_ESSER`, `AUX_AVER`)  
+- **Auxiliary Verbs (e.g., 'to be', 'to have')** (`AUX_[NAME OF THE AUXILIARY IN THE LANGUAGE]`)  
   Forms of *to be* and *to have* used for conjugation and periphrasis across languages.
 - **Modal Verbs** (`MODAL_VERBS`)  
   Express necessity, possibility, ability, or desire (e.g., *can*, *must*, *poder*, *deber*, *saber*, *voler*).
