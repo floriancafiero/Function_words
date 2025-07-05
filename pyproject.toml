@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "functionwordsets"           
-version = "1.0.0"            
+version = "1.0.1"            
 description = "Multilingual and diachronic function-word datasets, with modular composition"
 readme = "readme.md"
 authors = [
