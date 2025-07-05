@@ -26,7 +26,7 @@ pip install functionwords  # once published on PyPI
 pip install -e .           # from a cloned repo
 ```
 
-The library is pure Python ≥ 3.8, has zero runtime dependencies, and is <20 kB zipped.
+The library is in Python ≥ 3.8, has zero runtime dependencies, and is <20 kB zipped.
 
 ---
 
