@@ -20,11 +20,13 @@ Supported out of the box:
 
 It allows for personalized definition of function words. Function words are sorted by grammatical natures, which can be selected or not, depending on the expected use. 
 
-A user wanting to remove stopwords to build a word cloud or a topic modeling might chose the most extension function words list, while someone working on authorship attribution might adopt a more focused list, depending on the precise context.
+
 
 ## 💡 Supported Grammatical Categories
 
-This package provides curated lists of **function words** and **auxiliary forms** for multiple languages, including English, French, Latin, Spanish, Dutch, and historical languages such as Medieval Occitan. These lists are designed to support linguistic analysis, text preprocessing, token filtering, and computational processing across different corpora.
+This package provides curated lists of **function words** and **auxiliary forms**. These lists are designed to support linguistic analysis, text preprocessing, token filtering, and computational processing across different corpora.
+
+A user wanting to remove stopwords to build a word cloud or a topic modeling might chose the most extension function words list, while someone working on authorship attribution might adopt a more focused list, depending on the precise context.
 
 The supported grammatical categories include:
 
@@ -73,7 +75,6 @@ The supported grammatical categories include:
 ---
 
 The lists are designed to be **modular** and **language-specific**, allowing easy integration into NLP pipelines for diverse historical and modern languages. New languages and historical variants can be added or customized as needed.
-
 
 
 ---
