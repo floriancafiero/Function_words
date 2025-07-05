@@ -156,7 +156,3 @@ data = {
     "period": "12-13c",
     "categories": categories,
 }
-
-file = pathlib.Path("/mnt/data/oc_13c_enriched.json")
-file.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
-file
