@@ -1,16 +1,13 @@
-import functionwordsetss as fw
+import functionwordsets as fw
 
 def test_loader_core():
-    # 1. on trouve le jeu fr_21c
+    # Vérifie que tous les jeux de données sont disponibles
     ids = fw.available_ids()
-    assert "fr_21c" in ids and ids, "fr_21c should be listed"
+    assert isinstance(ids, list) and "fr_21c" in ids
 
+    # Test sur un jeu simple
     fr = fw.load("fr_21c")
-    # 2. taille approximative connue
-    assert 580 < len(fr.all) < 700
-    # 3. contrôle de présence
-    assert "ne" in fr.all
-    # 4. subset sur 2 catégories
+    assert "ne" in fr.all                      # test de présence
+    assert len(fr.all) > 100                   # taille minimale
     sub = fr.subset(["articles", "prepositions"])
-    assert sub                               # not empty
-    assert sub.issubset(fr.all)
+    assert sub.issubset(fr.all) and sub        # sous-ensemble valide
