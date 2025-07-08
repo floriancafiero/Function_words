@@ -1,6 +1,8 @@
 from __future__ import annotations
 from dataclasses import dataclass
 from typing import Iterable
+import importlib.util
+import pathlib
 
 @dataclass(frozen=True, slots=True)
 class FunctionWordSet:
@@ -16,33 +18,23 @@ class FunctionWordSet:
     def subset(self, keys: Iterable[str]) -> frozenset[str]:
         return frozenset().union(*(self.categories[k] for k in keys))
 
-# Liste des identifiants disponibles (à automatiser plus tard!)
-_AVAILABLE_IDS = [
-    "en_21c",
-    "fr_21c",
-    "gr_5cbc",
-    "it_21c",
-    "la_1cbc",
-    "nl_21c",
-    "oc_13c",
-    "sp_21c",
-]
-
-
 def available_ids() -> list[str]:
-    return _AVAILABLE_IDS
+    # Trouve les fichiers .py dans le dossier datasets/, sauf __init__.py
+    dataset_dir = pathlib.Path(__file__).parent / "datasets"
+    return sorted(
+        p.stem
+        for p in dataset_dir.glob("*.py")
+        if p.name != "__init__.py" and not p.name.startswith("_")
+    )
 
 def load(id_: str = "fr_21c") -> FunctionWordSet:
-    if id_ not in _AVAILABLE_IDS:
+    if id_ not in available_ids():
         raise ValueError(f"unknown function-word set: {id_}")
     
-    # Import dynamique du module de données
     mod = __import__(f"functionwordsets.datasets.{id_}", fromlist=["data"])
     raw = mod.data
-
-    # Conversion en frozenset pour respecter le typage
     cats = {k: frozenset(v) for k, v in raw["categories"].items()}
-    
+
     return FunctionWordSet(
         name=raw["name"],
         language=raw["language"],
