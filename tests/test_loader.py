@@ -1,4 +1,4 @@
-import functionwords as fw
+import functionwordsetss as fw
 
 def test_loader_core():
     # 1. on trouve le jeu fr_21c
