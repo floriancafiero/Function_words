@@ -32,6 +32,3 @@ Issues   = "https://github.com/floriancafiero/functionword/issues"
 [project.scripts]            
 fw-list   = "functionwordsets._cli:list_sets"
 fw-export = "functionwordsets._cli:export_set"
-
-[tool.setuptools.package-data]
-"functionword.datasets" = ["*.json"]
