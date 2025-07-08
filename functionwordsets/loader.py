@@ -16,12 +16,18 @@ class FunctionWordSet:
     def subset(self, keys: Iterable[str]) -> frozenset[str]:
         return frozenset().union(*(self.categories[k] for k in keys))
 
-# Nouveau : liste des identifiants disponibles (à la main ou automatisée plus tard)
+# Liste des identifiants disponibles (à automatiser plus tard!)
 _AVAILABLE_IDS = [
-    "fr_21c",
     "en_21c",
+    "fr_21c",
     "gr_5cbc",
+    "it_21c",
+    "la_1cbc",
+    "nl_21c",
+    "oc_13c",
+    "sp_21c",
 ]
+
 
 def available_ids() -> list[str]:
     return _AVAILABLE_IDS
