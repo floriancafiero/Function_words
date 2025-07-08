@@ -30,8 +30,8 @@ Homepage = "https://github.com/floriancafiero/functionword"
 Issues   = "https://github.com/floriancafiero/functionword/issues"
 
 [project.scripts]            
-fw-list   = "functionword._cli:list_sets"
-fw-export = "functionword._cli:export_set"
+fw-list   = "functionwordsets._cli:list_sets"
+fw-export = "functionwordsets._cli:export_set"
 
 [tool.setuptools.package-data]
 "functionword.datasets" = ["*.json"]
