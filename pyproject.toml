@@ -4,11 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "functionwordsets"
-version = "1.1.5"
+version = "1.1.6"
 description = "Multilingual and diachronic function-word datasets, with modular composition"
 readme = "readme.md"
 authors = [
-  {name = "Florian Cafiero", email = "florian.cafiero@sciencespo.fr"},
+  {name = "Florian Cafiero", email = "florian.cafiero@chartes.psl.eu"},
 ]
 license = {text = "GPLv3"}
 requires-python = ">=3.8"
