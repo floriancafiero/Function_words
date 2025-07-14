@@ -33,6 +33,7 @@ Issues   = "https://github.com/floriancafiero/functionwordsets/issues"
 fw-list   = "functionwordsets._cli:list_sets"
 fw-export = "functionwordsets._cli:export_set"
 
+
 [tool.setuptools]
 packages = ["functionwordsets", "functionwordsets.datasets"]
 
