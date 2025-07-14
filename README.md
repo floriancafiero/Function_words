@@ -8,7 +8,7 @@ _Comprehensive multilingual function-word datasets with a simple Python API_
 ---
 
 ## Overview
-`functionwordsets` ships ready-to-use **function-word lists** (often used as stop-lists) for many languages and time-periods.  
+`functionwordsets` ships ready-to-use **function-word lists** for many languages and time-periods.  
 Each dataset is a tiny **Python module** located in `functionwordsets/datasets/` and is loaded on demand through a minimal API.
 
 Supported out of the box :
@@ -94,12 +94,6 @@ data = {
     }
 }
 ```
-
-When you contribute a new set you can either:
-
-* keep this **Python** layout (`<id>.py` simply defines `data = {...}`); or  
-* use an external JSON/YAML file and load it in the module.
-
 `functionwordsets` treats the object as read-only, so feel free to edit or extend it in your fork.
 
 ---
