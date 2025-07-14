@@ -1,4 +1,4 @@
-\"\"\"Command-line interface for *functionwords*.\"\"\"
+"""Command-line interface for *functionwordsets*."""
 
 import argparse, json, sys
 from ._loader import load, available_ids
