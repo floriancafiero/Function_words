@@ -11,6 +11,7 @@ Exposes:
 from importlib.metadata import version, PackageNotFoundError
 from ._loader import FunctionWordSet, load, available_ids
 
+
 try:
     __version__ = version("functionwordsets")
 except PackageNotFoundError:          # editable / dev install
